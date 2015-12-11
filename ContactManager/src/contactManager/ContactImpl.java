@@ -21,5 +21,6 @@ public class ContactImpl implements Contact {
 	public String getNotes()
 	{
 		return this.notes;
-	} fdgdfg
+	} 
 }
+

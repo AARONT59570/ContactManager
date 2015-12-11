@@ -12,3 +12,4 @@ public interface Meeting {
 	Set<Contact> getContacts();
 >>>>>>> origin/master
 }
+ 
