@@ -1,0 +1,8 @@
+package contactManager;
+
+import java.util.Calendar;
+
+public interface Meeting {
+	int getID();
+	Calendar getDate();
+}

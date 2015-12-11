@@ -1,0 +1,8 @@
+package contactManager;
+
+public class ContactImpl {
+	private String name;
+	private int iD;
+	private String notes;
+	public ContactImpl(String name, int id, String notes)
+}
