@@ -1,0 +1,26 @@
+package contactManager;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+public class MeetingImpl {
+	private String[] record;
+	public Calendar getDate()
+	{
+		SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
+
+		try {
+
+			SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
+			Calendar calendarDate = Calendar.getInstance();
+			if (calendarDate!= null) {
+			strdate = sdf.format(calendarDate.getTime());
+			}
+
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+	}
+}
