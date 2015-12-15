@@ -6,9 +6,6 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class MeetingImpl {
-	int iD;
-	String strdate;
-	String contacts;
 	private String[] record;
 	@SuppressWarnings("finally")
 	public Calendar getDate()
