@@ -1,0 +1,16 @@
+package contactManager;
+import java.io.File;
+
+import fileHandler.CSVHandler;
+
+public class ContactController {
+	private String path = System.getProperty("user.home") + File.separatorChar + "Documents" + File.separatorChar + "records2.csv";
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CSVHandler csv = new CSVHandler();
+		
+
+	}
+
+}

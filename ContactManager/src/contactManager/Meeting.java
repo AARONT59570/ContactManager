@@ -6,6 +6,6 @@ import java.util.Set;
 public interface Meeting {
 	int getID();
 	Calendar getDate();
-	Set<Contact> getContacts();
+	Set<Contact> getContacts(Set<Contact> allContacts);
 }
  

@@ -4,7 +4,7 @@ public class ContactImpl implements Contact {
 	private String name;
 	private int iD;
 	private String notes;
-	public ContactImpl(String name, int id, String notes)
+	public ContactImpl(int id, String name, String notes)
 	{
 		this.name = name;
 		this.iD = id;

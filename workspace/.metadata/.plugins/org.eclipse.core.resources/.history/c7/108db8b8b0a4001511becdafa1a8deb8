@@ -1,0 +1,28 @@
+package contactManager;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+
+import fileHandler.CSVHandler;
+
+public class ContactController {
+	private static String documentsPath = System.getProperty("user.home") + File.separatorChar + "Documents" + File.separatorChar;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CSVHandler csv = new CSVHandler();
+		ArrayList<String[]> contactsRaw = csv.ReadFile(documentsPath + "Contacts.csv");
+		Set<Contact> contacts = new LinkedHashSet<Contact>();
+		for (Iterator iterator = contactsRaw.iterator(); iterator.hasNext();) {
+			String[] strings = (String[]) iterator.next();
+			Contact c = new ContactImpl(strings[0], strings[1], strings[2])
+		}
+		
+		
+
+	}
+
+}
