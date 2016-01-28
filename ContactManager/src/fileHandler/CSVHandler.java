@@ -10,7 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CSVHandler {
-	public List ReadFile(String path)
+	private boolean newFile = false;
+	@SuppressWarnings("unchecked")
+	public ArrayList<String[]> ReadFile(String path)
 	{
 		String csvFilePath = path;
 		File csvFile = null;
@@ -19,6 +21,7 @@ public class CSVHandler {
 			if(csvFile.createNewFile())
 			{
 				System.out.println("New CSV File Created");
+				newFile = true;
 			}
 		} catch (IOException e)
 		{
@@ -35,7 +38,7 @@ public class CSVHandler {
 				row = line.split(",");
 				list.add(row);
 			}
-			return list;
+			return (ArrayList<String[]>)list;
 		} catch (IOException e)
 		{ 
 			e.printStackTrace();
@@ -52,6 +55,7 @@ public class CSVHandler {
 			{
 				System.out.println("New CSV File Created");
 				append = false;
+				newFile = true;
 			}
 		} catch (IOException e)
 		{
